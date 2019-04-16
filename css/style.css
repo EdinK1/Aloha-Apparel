@@ -683,6 +683,10 @@ footer {
 
     /* Section: Showcase Footer */
 
+    #showcase_footer h1 {
+        margin-bottom: 1.5rem;
+    }
+
     #showcase_footer p {
         padding: 0 15rem;
     }
@@ -691,6 +695,7 @@ footer {
 
     #gallery h3 {
         font-size: 2.4rem;
+        font-family: 'Playfair';
     }
 
     /* Section: Products */
@@ -745,4 +750,25 @@ footer {
         -webkit-transition: 0.4s ease all;
         transition: 0.4s ease all;
     } */
+
+    /* Section: Updates */
+
+    #updates h1 {
+        font-size: 2.3rem;
+    }
+
+    #updates p {
+        font-size: 1.20rem;
+    }
+
+    /* Footer */
+
+    #main_footer {
+        height: 30vh;
+    }
+
+    #main_footer .footer_info_right a {
+        line-height: 1.3;
+        padding: 0.5rem 1rem;
+    }
 }
