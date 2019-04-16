@@ -22,7 +22,7 @@ $(".main_header a").on("click", function(event) {
     $(document).ready(function () {
 
         $('.container').flickity({
-            cellAlign: 'center',
+            cellAlign: 'left',
             wrapAround: true,
             prevNextButtons: false,
         });
