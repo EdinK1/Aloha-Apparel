@@ -1,13 +1,14 @@
 // Navbar link scrolling
 
-$(".main_header a").on("click", function(event) {
+$(function ($) {
+
+  $(".main_header a").on("click", function (event) {
     if (this.hash != "") {
       event.preventDefault();
-  
+
       const hash = this.hash;
-  
-      $("html, body").animate(
-        {
+
+      $("html, body").animate({
           scrollTop: $(hash).offset().top - 95
         },
         800
@@ -15,20 +16,17 @@ $(".main_header a").on("click", function(event) {
     }
   });
 
-// Flickity Slider 
+  // Flickity Slider 
 
-(function ($) {
+  $(document).ready(function () {
 
-    $(document).ready(function () {
-
-        $('.container').flickity({
-            cellAlign: 'left',
-            wrapAround: true,
-            prevNextButtons: false,
-        });
+    $('.container').flickity({
+      cellAlign: 'left',
+      wrapAround: true,
+      prevNextButtons: false,
     });
-})(jQuery)
-
+  });
+});
 
 // Cart Update
 
@@ -36,10 +34,10 @@ let timesClicked = 0;
 
 function cartUpdate() {
 
-    document.querySelector('.item_counter').style.visibility = "visible";
-    document.querySelector('.item_counter').innerHTML = ++timesClicked;
-    alert('Item added to cart.');
-    return true;
+  document.querySelector('.item_counter').style.visibility = "visible";
+  document.querySelector('.item_counter').innerHTML = ++timesClicked;
+  alert('Item added to cart.');
+  return true;
 }
 
 
@@ -47,13 +45,12 @@ function cartUpdate() {
 
 function subscribe() {
 
-    event.preventDefault();
-    let email = document.forms['form']['email'].value;
+  event.preventDefault();
+  let email = document.forms['form']['email'].value;
 
-    if (email === '') {
-        alert('Please submit a valid email address.');
-    } else if (email != '') {
-        alert('Thanks for subscribing.');
-    }
+  if (email === '') {
+    alert('Please submit a valid email address.');
+  } else if (email !== '') {
+    alert('Thanks for subscribing.');
+  }
 }
-

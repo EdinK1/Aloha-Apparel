@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/flickity.min.css">
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/flickity.min.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/style.css" />
   <title>Aloha Apparel Co.</title>
 </head>
@@ -17,41 +18,41 @@
 
   <!-- Header -->
 
-  <header id="main_header">
-    <div class="main_header">
-        <div class="logo">
-          <img src="images/aloha-logo.svg" alt="Logo" />
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#showcase_footer">About</a></li>
-            <li><a href="#gallery">Shop</a></li>
-            <li><a href="#products">Featured</a></li>
-            <li><a href="#updates">Updates</a></li>
-          </ul>
-        </nav>
-        <div class="cart">
-          <span id="item_counter" class="item_counter">0</span>
-          <img src="./images/cart-icon.svg" alt="Cart Icon" />
-        </div>
+  <header class="main_header">
+    <div class="header_container">
+      <div class="logo">
+        <img src="images/aloha-logo.svg" alt="Logo" />
       </div>
+      <nav>
+        <ul>
+          <li><a href="#showcase_footer">About</a></li>
+          <li><a href="#gallery">Shop</a></li>
+          <li><a href="#products">Featured</a></li>
+          <li><a href="#updates">Updates</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <span id="item_counter" class="item_counter">0</span>
+        <img src="./images/cart-icon.svg" alt="Cart Icon" />
+      </div>
+    </div>
     </div>
   </header>
 
   <!-- Section: Showcase -->
 
-  <section id="showcase">
-    <p class="showcase_heading_1">NEW COLLECTION</p>
-    <p class="showcase_heading_2">Spring/Summer 2019</p>
+  <section class="showcase">
+    <h1 class="showcase_heading_1">NEW COLLECTION</h1>
+    <h1 class="showcase_heading_2">Spring/Summer 2019</h1>
   </section>
 
   <!-- Section: Showcase Footer -->
 
-  <section id="showcase_footer">
+  <section id="showcase_footer" class="showcase_footer">
     <h1>Hand-Crafted <span>Styles</span></h1>
     <p>
-      Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
-      our <br>
+      Aloha Apparel Co. sells only the finest ready-to-travel clothing.
+      Browse our
       current selection of products or sign-up for updates below.
     </p>
   </section>
@@ -60,40 +61,34 @@
 
   <section id="gallery" class="gallery">
     <div class="mens">
-      <h3>Men's</h3>
+      <a href="#">Men's</a>
     </div>
 
     <div class="trends">
-      <h3>Trends</h3>
+      <a href="#">Trends</a>
     </div>
 
     <div class="glasses">
-      <h3>Glasses</h3>
+      <a href="#">Glasses</a>
     </div>
 
     <div class="sale">
-      <h3>Sale</h3>
+      <a href="#">Sale</a>
     </div>
 
     <div class="bags">
-      <h3>Bags</h3>
+      <a href="#">Bags</a>
     </div>
 
     <div class="womens">
-      <h3>Women's</h3>
+      <a href="#">Women's</a>
     </div>
   </section>
 
-  <div class="main-carousel">
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-    <div class="carousel-cell"></div>
-    ...
-  </div>
+  <!-- Section: Products  -->
 
-  <!-- Section: Products -->
+  <!-- <section id="products" class="products">
 
-  <section id="products" class="products">
     <h1>Most-Loved <span>Products</span></h1>
 
     <div class="container">
@@ -163,7 +158,7 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
   <!-- Section: Updates -->
 
@@ -171,9 +166,8 @@
     <h1>Sign-up for <span>Updates</span></h1>
     <p>
       Stay updated on our latest product releases, be first to find out
-      about <br>
-      upcoming sales, and get free style tips from our blog. Unsubscribe at 
-      any <br> time.
+      about upcoming sales, and get free style tips from our blog. Unsubscribe at
+      any time.
     </p>
 
     <form name="form" onsubmit="subscribe()">
@@ -184,7 +178,7 @@
 
   <!-- Footer -->
 
-  <footer id="main_footer">
+  <footer class="main_footer">
 
     <div class="footer_info_left">
       <p>&copy; 2019 Aloha Apparel Co.</p>
@@ -204,7 +198,7 @@
         <li><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></li>
         <li><i class="fab fa-twitter"></i><a href="#">Twitter</a></li>
         <li><i class="fab fa-instagram"></i><a href="#">Instagram</a></span>
-        <li><i class="fab fa-pinterest"></i><a href="#">Pinterest</a></a>
+        <li><i class="fab fa-pinterest"></i><a href="#">Pinterest</a></>
       </ul>
     </div>
   </footer>
