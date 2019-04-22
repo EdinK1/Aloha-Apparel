@@ -302,7 +302,6 @@ footer {
     background-position: bottom;
     display: flex;
     justify-content: center;
-    -ms-flex-align: center;
     align-items: center;
     flex-direction: column;
     line-height: 1.5;
@@ -317,7 +316,6 @@ footer {
     font-size: 1rem;
     text-shadow: 2px 2px #1a121252;
     padding: 1.5rem 1rem;
-    font-weight: thin;
     font-family: 'Raleway';
     font-weight: 200;
 }

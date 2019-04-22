@@ -14,7 +14,7 @@
 
 ## 1.Mobile first design
 
-### To be honest I never liked the idea of mobile first design but once you get the hang of it, you realize that creating the desired design becomes much easier. I will definitely start usign the mobile first design more often.
+To be honest I never liked the idea of mobile first design but once you get the hang of it, you realize that creating the desired design becomes much easier. I will definitely start usign the mobile first design more often.
 
 ## 2. Responsive design
 
