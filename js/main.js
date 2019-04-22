@@ -22,6 +22,7 @@ $(function ($) {
 
     $('.container').flickity({
       cellAlign: 'left',
+      autoPlay: 'true',
       wrapAround: true,
       prevNextButtons: false,
     });

@@ -18,6 +18,18 @@ h3 {
     font-family: 'Playfair Display', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    font-size: 2.375rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+h1 span {
+    font-style: normal;
+    font-weight: bold;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -90,7 +102,7 @@ footer {
     font-weight: normal;
     text-transform: uppercase;
     color: #e2574c;
-    padding: 0 1.4rem;
+    padding: 0 1.3rem;
 }
 
 .header_container a:hover {
@@ -121,7 +133,6 @@ footer {
     background: #e2574c;
     bottom: 55px;
     left: 55px;
-    cursor: pointer;
 }
 
 /* Section: Showcase */
@@ -144,12 +155,16 @@ footer {
 .showcase .showcase_heading_1 {
     font-size: 1.3rem;
     font-weight: normal;
+    font-style: normal;
+    font-family: 'Raleway';
 }
 
 .showcase .showcase_heading_2 {
     padding-top: 1.3rem;
     padding-bottom: 1rem;
-    font-family: 'PlayfairDisplay-Italic';
+    font-family: 'PlayfairDisplay-Regular';
+    text-shadow: 2px 2px #1a121252;
+    font-style: normal;
     font-size: 3.3rem;
 }
 
@@ -164,23 +179,13 @@ footer {
     color: #000;
 }
 
-.showcase_footer h1 {
-    font-size: 2.375rem;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.showcase_footer h1 span {
-    font-style: normal;
-    font-weight: bold;
-}
-
 .showcase_footer p {
     padding-top: 0.7rem;
     line-height: 1.8;
     font-size: 1.2rem;
-    font-family: 'PlayfairDisplay-Regular';
-    font-weight: normal;
+    color: #242424;
+    font-family: 'Raleway';
+    font-weight: 200;
 }
 
 /* Section: Gallery */
@@ -190,11 +195,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
     grid-gap: 0.5rem;
-    grid-template-areas: 
-        "mens mens",
-        "trends glasses",
-        "sale bags"
-        "womens womens";
 }
 
 .gallery a {
@@ -203,7 +203,8 @@ footer {
     align-items: center;
     height: 100%;
     color: #fff;
-    font-size: 2rem;
+    text-shadow: 2px 2px #1a121252;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
@@ -236,68 +237,61 @@ footer {
 
 
 /* Section: Products */
-/* 
-#products {
-    display: none;
+
+.products {
+    overflow-x: hidden;
 }
 
-#products h1 {
+.products h1 {
+    padding: 3rem 0;
+}
+
+.products .container {
+    height: 500px;
     text-align: center;
-    font-size: 2.375rem;
-    font-weight: 200;
-    font-style: italic;
 }
 
-#products h1 span {
-    font-style: normal;
-    font-weight: bold;
+.carousel {
+    background: #fff;
 }
-
-#products img {
-    text-align: center;
-    height: 200px;
-}
-
 
 .carousel-cell {
     width: 100%;
-    height: 160px;
-    padding: 1rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
 }
 
-#products p {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.875rem;
+.carousel-cell img {
+    height: 150px;
 }
 
-#products h3 {
-    text-align: center;
-    color: #e2574c;
+.category, .price {
+    font-family: 'Raleway';
+    padding: 1rem 0;
+    color: #969696;
     font-size: 1rem;
-    font-weight: normal;
-    font-family: 'Raleway-MediumItalic';
 }
 
-#products .add_to_cart {
+.description {
+    font-size: 1.5rem;
+    color: #e2574c;
+}
+
+.add_to_cart {
+    border: none;
+    font-size: 1rem;
     color: #fff;
     background: #242424;
-    border: none;
+    width: 130px;
+    height: 35px;
     border-radius: 25px;
-    width: 50px;
-    height: 10px;
-    cursor: pointer;
-    transition: 0.4s ease all;
 }
 
-#products .add_to_cart:hover {
-    background: #000;
+.flickity-page-dots {
+    position: relative;
+    bottom: -30px;
 }
-
-#products .add_to_cart:focus {
-    outline: none;
-} 
-*/
 
 /* Section: Updates */
 
@@ -305,7 +299,6 @@ footer {
     height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/wave-bkgd.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: bottom;
     display: flex;
     justify-content: center;
@@ -316,24 +309,16 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 
-.updates h1 {
-    padding-top: 1.5rem;
-    font-size: 2.375rem;
-    font-weight: normal;
-    font-style: italic;
-}
-
-.updates h1 span {
-    font-style: normal;
-    font-weight: bold;
-}
 
 .updates p {
     font-size: 1rem;
     padding: 1.5rem 1rem;
     font-weight: thin;
+    font-family: 'Raleway';
+    font-weight: 200;
 }
 
 .updates input[type="email"] {
@@ -362,7 +347,7 @@ footer {
 /* Footer */
 
 .main_footer {
-    height: 35vh;
+    height: 50vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -451,6 +436,7 @@ footer {
     .header_container .item_counter {
         left: 65px;
         bottom: 53px;
+    
     }
 
     /* Section: Showcase */
@@ -479,10 +465,7 @@ footer {
 
     .gallery {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 200px);        
-        grid-template-areas: 
-            "mens trends glasses",
-            "sale bags womens"
+        grid-template-rows: repeat(2, 200px);
     }
 
     .mens {
@@ -497,15 +480,24 @@ footer {
         grid-column: span 2;
     }
 
+     /* Section: Products */
+
+    .products .container {
+        height: 500px;
+    }
+
+    .carousel-cell {
+        width: 50%;
+    }
 
     /* Section: Updates */
 
-    .updates h1 {
-        margin-top: 1rem;
+    .updates {
+        height: 50vh;
     }
 
     .updates p {
-        width: 600px;
+        width: 610px;
     }
 
     .updates input[type="email"] {
@@ -524,7 +516,7 @@ footer {
         bottom: 60px;
     }
 
-    /* Section: Footer */
+    /* Footer */
 
     .main_footer {
         padding: 0 1rem;
@@ -553,10 +545,6 @@ footer {
 /* For Desktops */
 
 @media only screen and (min-width: 1240px) {
-
-    body {
-        font-size: 16px;
-    }
 
     /* Header */
 
@@ -588,11 +576,11 @@ footer {
     /* Section: Showcase Footer */
 
     .showcase_footer {
-        padding: 3.2rem 1rem;
+        padding: 3.5rem 1rem;
     }
 
     .showcase_footer p {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         width: 650px;
     }
 
@@ -603,11 +591,21 @@ footer {
     /* Section: Gallery */
 
     .gallery {
-        grid-template-rows: repeat(2, 470px);        
+        grid-template-rows: repeat(2, 470px);
     }
 
     .gallery a {
         font-size: 2.3rem;
+    }
+
+    /* Section: Products */
+
+    .carousel-cell {
+        width: 25%;
+    }
+
+    .flickity-page-dots {
+        bottom: -40px;
     }
 
     /* Section: Updates */
@@ -622,14 +620,18 @@ footer {
 
     .updates p {
         font-size: 1.20rem;
-        width: 700px;
+        width: 720px;
     }
 
     /* Footer */
 
-    .main_footer {
+    .main_footer { 
         height: 30vh;
         justify-content: space-around;
+    }
+
+    .footer_email {
+        font-size: 1.15rem;
     }
 
     .main_footer .footer_info_right a {
