@@ -27,7 +27,7 @@ The inspector is such an important tool. It makes your work much easier. In my o
 
 # My notes about the project
 
-## Building this project was so much fun. It was such a solid project and I feel like I learned a lot from it. I also enjoyed completing the stretch goals. The fixed navbar was good for developing more CSS3 skills. The "add to cart" button was a very good exercise as well.
+Building this project was so much fun. It was such a solid project and I feel like I learned a lot from it. I also enjoyed completing the stretch goals. The fixed navbar was good for developing more CSS3 skills. The "add to cart" button was a very good exercise as well.
 
 
 
