@@ -315,6 +315,7 @@ footer {
 
 .updates p {
     font-size: 1rem;
+    text-shadow: 2px 2px #1a121252;
     padding: 1.5rem 1rem;
     font-weight: thin;
     font-family: 'Raleway';
@@ -327,7 +328,7 @@ footer {
     border-radius: 25px;
     border: none;
     font-size: 1rem;
-    padding: 20px;
+    padding: 1.2rem;
 }
 
 .updates input[type="submit"] {
