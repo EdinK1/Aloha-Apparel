@@ -1,5 +1,3 @@
-/* Utility Classes */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -160,6 +158,8 @@ footer {
     font-style: normal;
     font-size: 3.3rem;
 }
+
+/* Section: Showcase Footer */
 
 .showcase_footer {
     padding: 3.1rem 1rem;
@@ -385,9 +385,7 @@ footer {
     display: none;
 }
 
-
 /* Media Queries */
-
 
 /* For Tablets */
 
@@ -396,6 +394,8 @@ footer {
     body {
         font-size: 16px;
     }
+
+    /* Header */
 
     .header_container {
         flex-wrap: nowrap;
