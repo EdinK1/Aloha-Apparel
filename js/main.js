@@ -3,7 +3,7 @@
 $(function ($) {
 
   $(".main_header a").on("click", function (event) {
-    if (this.hash != "") {
+    if (this.hash !== "") {
       event.preventDefault();
 
       const hash = this.hash;
@@ -32,13 +32,20 @@ $(function ($) {
 // Cart Update
 
 let timesClicked = 0;
+let addToCart = document.querySelectorAll('.add_to_cart');
+let itemCounter = document.querySelector('.item_counter');
 
-function cartUpdate() {
+for (let i = 0; i < addToCart.length; i++) {
 
-  document.querySelector('.item_counter').style.visibility = "visible";
-  document.querySelector('.item_counter').innerHTML = ++timesClicked;
-  alert('Item added to cart.');
-  return true;
+  addToCart[i].addEventListener('click', function(event) {
+    event.preventDefault();
+  
+    itemCounter.style.visibility = "visible";
+    itemCounter.innerHTML = ++timesClicked;
+    alert('Item added to cart.');
+    return true;
+  
+  });
 }
 
 
@@ -54,4 +61,4 @@ function subscribe() {
   } else if (email !== '') {
     alert('Thanks for subscribing.');
   }
-}
+};

@@ -294,10 +294,10 @@ footer {
 /* Section: Updates */
 
 .updates {
-    height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/images/wave-bkgd.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,10 +305,8 @@ footer {
     line-height: 1.5;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    margin-bottom: 0.5rem;
+    padding: 3rem 0;
 }
-
 
 .updates p {
     font-size: 1rem;
@@ -318,7 +316,12 @@ footer {
     font-weight: 200;
 }
 
-.updates input[type="email"] {
+.updates form {
+    max-width: 360px;
+    width: 100%;
+}
+
+.updates .email {
     width: 100%;
     height: 50px;
     border-radius: 25px;
@@ -327,12 +330,12 @@ footer {
     padding: 1.2rem;
 }
 
-.updates input[type="submit"] {
+.updates .submit {
     position: relative;
     font-size: 0.8rem;
-    left: 114px;
-    bottom: 44px;
     padding: 10px;
+    bottom: 44px;
+    left: 125px;
     background: #e2574c;
     color: #fff;
     width: 100px;
@@ -489,16 +492,13 @@ footer {
 
     /* Section: Updates */
 
-    .updates {
-        height: 50vh;
-    }
-
     .updates p {
         width: 610px;
     }
 
-    .updates input[type="email"] {
-        width: 110%;
+    .updates .email {
+        margin: 0 auto;
+        width: 400px;
         height: 50px;
         border-radius: 25px;
         margin-top: 1rem;
@@ -508,8 +508,9 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .updates input[type="submit"] {
-        left: 147px;
+    .updates .submit {
+        position: relative;
+        left: 165px;
         bottom: 60px;
     }
 
@@ -606,10 +607,6 @@ footer {
     }
 
     /* Section: Updates */
-
-    .updates {
-        height: 45vh;
-    }
 
     .updates h1 {
         font-size: 2.3rem;
