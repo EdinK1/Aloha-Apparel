@@ -236,32 +236,21 @@ footer {
 
 /* Section: Products */
 
-.products {
-    overflow-x: hidden;
-}
-
 .products h1 {
     padding: 3rem 0;
 }
 
-.products .container {
-    height: 500px;
-    text-align: center;
-}
-
-.carousel {
-    background: #fff;
+.main-carousel {
+    height: 600px;
 }
 
 .carousel-cell {
     width: 100%;
-    margin-right: 10px;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
+    text-align: center;
 }
 
-.carousel-cell img {
-    height: 150px;
+.flickity-page-dots {
+    bottom: 50px;
 }
 
 .category, .price {
@@ -284,11 +273,6 @@ footer {
     width: 130px;
     height: 35px;
     border-radius: 25px;
-}
-
-.flickity-page-dots {
-    position: relative;
-    bottom: -30px;
 }
 
 /* Section: Updates */
@@ -482,10 +466,6 @@ footer {
 
      /* Section: Products */
 
-    .products .container {
-        height: 500px;
-    }
-
     .carousel-cell {
         width: 50%;
     }
@@ -600,10 +580,6 @@ footer {
 
     .carousel-cell {
         width: 25%;
-    }
-
-    .flickity-page-dots {
-        bottom: -40px;
     }
 
     /* Section: Updates */

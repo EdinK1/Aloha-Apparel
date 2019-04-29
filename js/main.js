@@ -16,19 +16,6 @@ $(function ($) {
     }
   });
 
-  // Flickity Slider 
-
-  $(document).ready(function () {
-
-    $('.container').flickity({
-      cellAlign: 'left',
-      autoPlay: 'true',
-      wrapAround: true,
-      prevNextButtons: false,
-    });
-  });
-});
-
 // Cart Update
 
 let timesClicked = 0;
@@ -46,7 +33,7 @@ for (let i = 0; i < addToCart.length; i++) {
     return true;
   
   });
-}
+};
 
 
 // Subscription Alert
@@ -58,7 +45,8 @@ function subscribe() {
 
   if (email === '') {
     alert('Please submit a valid email address.');
-  } else if (email !== '') {
-    alert('Thanks for subscribing.');
+  } else {  
+  alert('Thanks for subscribing.');
+    }
   }
-};
+});
