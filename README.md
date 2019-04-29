@@ -12,9 +12,9 @@
 
 # Personal Learnings
 
-## 1.Mobile first design
+## 1.Mobile first approach
 
-To be honest I never liked the idea of mobile first design but once you get the hang of it, you realize that creating the desired design becomes much easier. I will definitely start usign the mobile first design more often.
+To be honest I never liked the idea of mobile first design but once you get the hang of it, you realize that creating the desired design becomes much easier. I will definitely start using the mobile first design more often.
 
 ## 2. Responsive design
 
@@ -24,6 +24,10 @@ It would always sound like a hard thing to do but now that I had this project th
 ## 3. Using the inspector more
 
 The inspector is such an important tool. It makes your work much easier. In my opinion, knowing how to use the inspector is very important and a crucial part of being a productive Web Developer.
+
+## 4. Using a plugin (Flickity)
+
+As plugins are software components built by other people to make our lives easier, I've realized that learning how to use them before applying it to your project is a life saver. Most of the plugins out there have a pretty decent documentation. Reading the documentation and understanding how the plugin works will make your workflow much more productive. 
 
 # My notes about the project
 
