@@ -181,7 +181,7 @@ footer {
     padding-top: 0.7rem;
     line-height: 1.8;
     font-size: 1.2rem;
-    color: #242424;
+    color: #2d2d2d;
     font-family: 'Raleway';
     font-weight: 200;
 }
@@ -260,6 +260,10 @@ footer {
     font-size: 1rem;
 }
 
+.category {
+    text-transform: uppercase;
+}
+
 .description {
     font-size: 1.5rem;
     color: #e2574c;
@@ -312,6 +316,7 @@ footer {
     border: none;
     font-size: 1rem;
     padding: 1.2rem;
+    color: #2d2d2d;
 }
 
 .updates .submit {
