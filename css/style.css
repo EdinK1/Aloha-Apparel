@@ -97,7 +97,7 @@ footer {
 .header_container a {
   font-weight: normal;
   text-transform: uppercase;
-  color: #e2574c;
+  color: #db3a26;
   padding: 0 1.3rem;
 }
 
@@ -126,7 +126,7 @@ footer {
   border: none;
   border-radius: 50%;
   padding: 0.2rem 0.5rem;
-  background: #e2574c;
+  background: #db3a26;
   bottom: 55px;
   left: 55px;
 }
@@ -272,7 +272,7 @@ footer {
 
 .description {
   font-size: 1.5rem;
-  color: #e2574c;
+  color: #db3a26;
 }
 
 .add_to_cart {
@@ -332,7 +332,7 @@ footer {
   padding: 10px;
   bottom: 44px;
   left: 125px;
-  background: #e2574c;
+  background: #db3a26;
   color: #fff;
   width: 100px;
   font-size: 1rem;
@@ -358,7 +358,7 @@ footer {
 }
 
 .main_footer a:hover {
-  color: #e2574c;
+  color: #db3a26;
 }
 
 .main_footer .footer_email {
